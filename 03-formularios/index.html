@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+    
+    <div id="app">
+        <h1>{{title}}</h1>
+
+        <form @submit.prevent="handleSubmit()">
+            <input 
+                type="text" 
+                placeholder="nombre"
+                v-model.trim="datos.name"
+            />
+            <hr>
+            <input 
+                type="text"
+                placeholder="apellidos"
+                v-model.trim= "datos.apellido"
+            >
+            <hr>
+            <input 
+                type="number"
+                placeholder="edad"
+                v-model.number="datos.age"
+                min="15"
+                max="100"
+            >
+            <hr>
+            <h2>lenguaje favoritos</h2>
+            <input 
+                type="checkbox"id="js"
+                v-model="datos.langs"
+                value="js"
+            />
+            <label for="js">Javascript</label>
+
+            <input 
+                type="checkbox" id="py"
+                v-model="datos.langs"
+                value="py"
+            />
+            <label for="py">Python</label>
+
+            <input 
+                type="checkbox" id="lara"
+                v-model="datos.langs"
+                value="lara"
+            />
+            <label for="lara">laravel</label>
+
+            <input
+                type="checkbox" id="html"
+                v-model="datos.langs"
+                value="html"
+            />
+            <label for="html">html 5</label>
+
+            <h2>Sexo</h2>
+            <input 
+                type="radio"
+                id="hombre"
+                value="m"
+                v-model="datos.gener"
+            />
+            <label for="hombre">Hombre</label>
+
+            <input
+                type="radio"
+                id="mujer"
+                value="f"
+                v-model="datos.gener"
+            />
+            <label for="mujer">Mujer</label>
+
+            <hr>
+            <input 
+                type="submit"
+            />
+
+        </form>
+
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/mountApp.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+const mount = Vue.mountApp('#app')

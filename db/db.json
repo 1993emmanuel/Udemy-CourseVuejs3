@@ -1,0 +1,66 @@
+{
+  "users": [
+    {
+      "email": "emmanuel@test.com",
+      "name": "Emmanuel",
+      "password": "emmanuel123",
+      "id": 1
+    },
+    {
+      "email": "ejemplo@corre.com",
+      "name": "ejemplo",
+      "password": "ejemplo",
+      "id": 2
+    },
+    {
+      "email": "ejampleo@gmail.com",
+      "name": "ejemplo",
+      "password": "ejemplo",
+      "id": 3
+    },
+    {
+      "email": "emmanuel@ejemplonadamas.com",
+      "name": "emma",
+      "password": "ejemplonadamas",
+      "id": 4
+    }
+  ],
+  "restaurant": [
+    {
+      "id": 1,
+      "name": "Burger King",
+      "contact": 111111,
+      "address": "no se la direccion"
+    },
+    {
+      "id": 2,
+      "name": "tacos pako",
+      "contact": 222222,
+      "address": "tampoco se la direccion"
+    },
+    {
+      "id": 3,
+      "name": "tacos paco",
+      "contact": 333333,
+      "address": "tampoco se la direccion X2"
+    },
+    {
+      "name": "ejemplo",
+      "address": "ejemplo",
+      "contact": "ejemplo",
+      "id": 4
+    },
+    {
+      "name": "ejemplar",
+      "address": "ejemplar",
+      "contact": "otro ejemplar",
+      "id": 5
+    },
+    {
+      "name": "mas ejemplos",
+      "address": "otros ejemplos",
+      "contact": "123456",
+      "id": 6
+    }
+  ]
+}

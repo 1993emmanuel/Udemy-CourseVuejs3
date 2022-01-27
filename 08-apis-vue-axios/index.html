@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apis vue axios</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+</head>
+<body>
+    
+    <div id="app">
+
+        <h1>{{title}}</h1>
+
+        <div class="container" v-for="dato in datos" :key="dato.id">
+
+            <h2>name : {{dato.name}}</h2>
+            <h3>username : {{ dato.username }}</h3>
+            <hr>
+            <h5>phone :  {{dato.phone}}</h5>
+            <hr>
+            <h5>email : {{dato.email}}</h5>
+            <hr>
+            <a :href="`https://${dato.website}`" target="_blank">website</a>
+        </div>
+
+    </div>
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/mountApp.js"></script>
+</body>
+</html>
